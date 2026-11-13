@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding Invitation | Save the Date</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2b1019;
+    color: #fff4df;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.hero {
+    min-height: 100vh;
+    padding: 55px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+      linear-gradient(rgba(35, 9, 17, .78), rgba(35, 9, 17, .9)),
+      url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1600');
+    background-size: cover;
+    background-position: center;
+}
+
+.invitation {
+    width: 100%;
+    max-width: 720px;
+    padding: 55px 25px;
+    border: 1px solid #c9a45b;
+    outline: 1px solid rgba(201,164,91,.4);
+    outline-offset: 8px;
+    background: rgba(45, 12, 24, .82);
+    backdrop-filter: blur(5px);
+}
+
+.small-title {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    letter-spacing: 5px;
+    color: #e7c77e;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(35px, 7vw, 62px);
+    font-weight: 400;
+    line-height: 1.2;
+    color: #f5dfad;
+}
+
+.ampersand {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-style: italic;
+    color: #d7ad65;
+    margin: 12px 0;
+}
+
+.message {
+    margin: 28px auto;
+    max-width: 480px;
+    line-height: 2;
+    font-size: 14px;
+    color: #eadcc8;
+}
+
+.divider {
+    width: 100px;
+    height: 1px;
+    background: #c9a45b;
+    margin: 30px auto;
+}
+
+.date {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #f3d28c;
+    line-height: 1.8;
+}
+
+.venue {
+    font-size: 14px;
+    line-height: 2;
+    color: #eadcc8;
+    margin-top: 20px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 35px auto;
+    flex-wrap: wrap;
+}
+
+.time-box {
+    border: 1px solid #ad8b4d;
+    padding: 15px 12px;
+    min-width: 75px;
+}
+
+.time-box strong {
+    display: block;
+    font-size: 27px;
+    font-family: 'Cinzel', serif;
+    color: #f2d18b;
+}
+
+.time-box span {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 24px;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 1px;
+    border: 1px solid #c9a45b;
+    color: #f5dfad;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #c9a45b;
+    color: #2b1019;
+}
+
+footer {
+    padding: 25px;
+    color: #c9a45b;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+@media(max-width:480px) {
+    .invitation {
+        padding: 40px 17px;
+    }
+    .date {
+        font-size: 16px;
+    }
+    .time-box {
+        min-width: 65px;
+        padding: 12px 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+<div class="invitation">
+
+    <div class="small-title">THE WEDDING INVITATION</div>
+
+    <p style="color:#e7c77e; font-size:30px;">❦</p>
+
+    <p class="message">
+        Together with our families, we joyfully invite you
+        to celebrate the beginning of our beautiful journey.
+    </p>
+
+    <!-- Replace with bride and groom names -->
+
+    <h1>Groom Name</h1>
+    <div class="ampersand">&</div>
+    <h1>Bride Name</h1>
+
+    <div class="divider"></div>
+
+    <div class="small-title">JOIN US TO CELEBRATE</div>
+
+    <!-- Update wedding date -->
+
+    <div class="date">
+        20 DECEMBER 2026
+        <br>
+        SUNDAY
+    </div>
+
+    <div class="venue">
+        <strong>THE WEDDING CEREMONY</strong>
+        <br>
+        Your Wedding Venue Name
+        <br>
+        Your City, Andhra Pradesh
+    </div>
+
+    <div class="countdown">
+        <div class="time-box">
+            <strong id="days">00</strong>
+            <span>DAYS</span>
+        </div>
+        <div class="time-box">
+            <strong id="hours">00</strong>
+            <span>HOURS</span>
+        </div>
+        <div class="time-box">
+            <strong id="minutes">00</strong>
+            <span>MINUTES</span>
+        </div>
+        <div class="time-box">
+            <strong id="seconds">00</strong>
+            <span>SECONDS</span>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <a class="btn" href="https://www.google.com/maps" target="_blank">
+            VIEW LOCATION
+        </a>
+
+        <a class="btn" id="share" href="#">
+            SHARE INVITATION
+        </a>
+    </div>
+
+    <div class="divider"></div>
+
+    <p style="font-family:'Playfair Display'; font-style:italic;">
+        Your presence will make our celebration even more special.
+    </p>
+
+</div>
+</section>
+
+<footer>
+    With love & blessings ♥
+</footer>
+
+<script>
+const weddingDate = new Date("2026-12-20T10:00:00+05:30").getTime();
+
+function updateCountdown() {
+    const now = Date.now();
+    const distance = weddingDate - now;
+
+    if (distance <= 0) {
+        document.querySelector(".countdown").innerHTML =
+            "<p>Today is the special day! ♥</p>";
+        return;
+    }
+
+    document.getElementById("days").textContent =
+        Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    document.getElementById("hours").textContent =
+        Math.floor((distance / (1000 * 60 * 60)) % 24);
+
+    document.getElementById("minutes").textContent =
+        Math.floor((distance / (1000 * 60)) % 60);
+
+    document.getElementById("seconds").textContent =
+        Math.floor((distance / 1000) % 60);
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+document.getElementById("share").addEventListener("click", function(e) {
+    e.preventDefault();
+
+    const shareData = {
+        title: "Wedding Invitation",
+        text: "You are warmly invited to celebrate our wedding!",
+        url: window.location.href
+    };
+
+    if (navigator.share) {
+        navigator.share(shareData).catch(() => {});
+    } else {
+        navigator.clipboard.writeText(window.location.href);
+        alert("Invitation link copied!");
+    }
+});
+</script>
+
+</body>
+</html>
